@@ -12,7 +12,7 @@ int main(void)
 	while (alpha >= 'a')
 	{
 		purchar(alpha);
-		apha--;
+		alpha--;
 	}
 	purchar('\n');
 
