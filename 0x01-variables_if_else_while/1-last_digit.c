@@ -20,7 +20,7 @@ int main(void)
 	{
 		printf("is greater than 5\n");
 	}
-	elseif ((n % 20) == 0)
+	else if ((n % 20) == 0)
 	{
 		printf("is 0\n");
 	}
