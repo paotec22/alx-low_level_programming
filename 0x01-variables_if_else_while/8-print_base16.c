@@ -22,6 +22,7 @@ int main(void)
 		a_to_f++;
 	}
 
-	putchar('\n);
+	putchar('\n');
+
 	return (0);
 }
