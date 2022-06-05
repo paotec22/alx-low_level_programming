@@ -11,10 +11,10 @@ int main(void)
 
 	while (alpha >= 'a')
 	{
-		purchar(alpha);
+		putchar(alpha);
 		alpha--;
 	}
-	purchar('\n');
+	putchar('\n');
 
 	return (0);
 }
