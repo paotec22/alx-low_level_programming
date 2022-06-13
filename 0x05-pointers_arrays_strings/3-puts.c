@@ -2,24 +2,18 @@
 #include "_putchar.c"
 
 /**
- * _puts - prints string to standard output
- * @str: String
+ * _puts - prints a string to std output
+ * @str: pointer to string to print
+ * _putchar: print string
  */
 
 void _puts(char *str)
 {
-	int count;
-	
-	count = 0;
-	
-	while (count >= 0)
+	int i;
+
+	for (i = 0; str[i] != '\0'; i++)
 	{
-		if (str[count] == '\0')
-		{
-			_putchar('\n');
-			break;
-		}
-		_putchar(str[count]);
-		count++;
+		_putchar(str[i]);
 	}
+	_putchar('\n');
 }
