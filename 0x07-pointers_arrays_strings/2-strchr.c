@@ -2,17 +2,27 @@
 #include <stdio.h>
 
 /**
- * main - check the code for Holberton School students.
+ * *_strchr - locates a character in a string
+ * @s: string to search
+ * @c: char to find
  *
- * Return: Always 0.
+ * Return: a pointer to the first occurrence of the character
+ * c in the string s, or NULL if the character is not found
  */
-int main(void)
+char *_strchr(char *s, char c)
 {
-	char *s = "hello";
-	char *f;
+		int a;
 
-	f = _strchr(s, 'l');
-	printf("%s\n", f);
-
-	return (0);
+		while (1)
+		{
+			a = *s++;
+			if (a == c)
+			{
+				return (s - 1);
+			}
+			if (a == 0)
+			{
+				return (NULL);
+			}
+		}
 }
