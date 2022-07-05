@@ -2,12 +2,6 @@
 #define _DOG_H_
 
 /**
- * dog_b - Typedef for struct dog
- */
-
-typeof struct dog_b;
-
-/**
  * struct dog -stores info of dog
  * @name - name of dog
  * @age - age of dog
@@ -20,6 +14,10 @@ struct dog
 	float age;
 	char *owner;
 };
+
+/**
+ * dog_t - new type for struct dog.
+ */
 
 void init_dog(struct dog *d, char *name, float age, char *owner);
 void print_dog(struct dog *d);
