@@ -2,15 +2,11 @@
 #define _DOG_H_
 
 /**
- * struct dog -stores info of dog
- * @name: name of dog
- * @age: age of dog
- * @owner: owner of dog
- *
- *  Description: struct called "dog" that stores its name, its age
- * and the name of its owner.
+ * struct dog - Dog informations
+ * @name: pointer pointed to the name of dog
+ * @age: pointer pointed to the age of dog
+ * @owner: pointer pointed to the owner of dog
  */
-
 struct dog
 {
 	char *name;
@@ -21,7 +17,6 @@ struct dog
 /**
  * dog_t - Defining a new type dog_t as a new name for the type struct dog.
  */
-
 typedef struct dog dog_t;
 
 int _putchar(char);
