@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-struct dog
+typedef struct dog
 {
 	char* name;
 	float age;
