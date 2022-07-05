@@ -13,13 +13,13 @@
 
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
-	/*Check if pointer is NULL*/
-	if (d == 0)
-		return (1)
-		{
-			/* Initialize variables*/
-			d.name = name;
-			d.age = age;
-			d.owner = owner;
-		}
+	/*Check if pointer is not NULL*/
+	if (d != 0)
+	
+	{
+		/* Initialize variables*/
+		(d*).name = name;
+		(d*).age = age;
+		d->owner = owner;
+	}
 }
