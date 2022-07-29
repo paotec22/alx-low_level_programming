@@ -4,14 +4,15 @@
 #include <main.h>
 
 /**
- * create_file: Create file with write only permissions if the file does mot exist.
+ * create_file - Create file with write only permissions
+ * if the file does not exist
  * Truncate file if it exists; fill file with the contents of text_content.
  * @filename: The name of the file to create
  * @text_content: Content of the text
  * Return: 1 if success, -1 if failed.
  */
 
-inn create_file(const char *filename, char *text_content)
+int create_file(const char *filename, char *text_content)
 {
 	ssize_t file;
 	ssize_t b_write;
@@ -27,8 +28,8 @@ inn create_file(const char *filename, char *text_content)
 	b_write = 0;
 	if (text_content)
 	{
-		for (length = 0; text_content[length]; lenth++);
-
+		for (length = 0; text_content[length]; lenth++)
+			;
 		b_write = write(file, text_content, length);
 	}
 	close(file);
