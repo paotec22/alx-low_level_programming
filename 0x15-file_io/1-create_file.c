@@ -1,7 +1,7 @@
 #include <fcntl.h>
 #include <unistd.h>
 #include <stdlib.h>
-#include <main.h>
+#include "main.h"
 
 /**
  * create_file - Create file with write only permissions
