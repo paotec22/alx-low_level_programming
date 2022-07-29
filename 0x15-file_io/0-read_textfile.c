@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * _strlen - count len of string
  * @s: string pointer
@@ -14,9 +13,8 @@ int _strlen(char *s)
 		len++;
 	return (len);
 }
-
 /**
- *  reads a textfile - function read textfiles
+ *  read_textfile - function read textfiles
  *  @filename: pointer namefile
  *  @letters: letters for print
  *  Return: print letters
@@ -28,7 +26,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	char *buf;
 	int file, reading;
 
-	buf = malloc(sizeof(char) *letters);
+	buf = malloc(sizeof(char) * letters);
 	file = open(filename, O_RDONLY);
 	if (file == -1)
 	{
@@ -54,7 +52,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	free(buf);
 	if (close(file) == -1)
 	{
-		return(-1);
+		return (-1);
 	}
 	else
 	{
