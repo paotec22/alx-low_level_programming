@@ -5,16 +5,14 @@
  *Return: Always 0 (Success)
  */
 
-int main(void)
+int main()
 {
-	char alpha = 'a';
+   char n;
 
-	while (alpha <= 'z')
-	{
-		putchar(alpha);
-		alpha++;
-	}
-	putchar('\n');
-
-	return (0);
+   for (n = 97; n <= 122;n++)
+   {
+      putchar(n);
+   }
+   putchar('\n');
+   return 0;
 }
